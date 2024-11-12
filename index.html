@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M10_Dz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- шапка -->
+    <header class="header center">
+      <a href="#"
+        ><img
+          src="./images/header-logo.png"
+          alt="header-logo"
+          class="header__logo"
+      /></a>
+      <nav class="header__navs">
+        <a href="#" class="header__nav">Home</a>
+        <a href="#" class="header__nav">Shop</a>
+        <a href="#" class="header__nav">Our Story</a>
+        <a href="#" class="header__nav">Blog</a>
+        <a href="#" class="header__nav">Contact</a>
+      </nav>
+      <div class="header__blocks">
+        <a href="#"><img src="./images/header-search.png" alt="search" /></a>
+        <a href="#"><img src="./images/header-hart.png" alt="hart" /></a>
+        <a href="#"><img src="./images/header-basket.png" alt="basket" /></a>
+        <a href="#"
+          ><img src="./images/header-persanal.png" alt="persanal"
+        /></a>
+      </div>
+    </header>
+    <!-- контент -->
+    <main>
+      <!-- Баннер -->
+      <div class="banner">
+        <p class="banner__text">T-shirt / Tops</p>
+        <p class="banner__title">Summer Value Pack</p>
+        <p class="banner__text">cool / colorful / comfy</p>
+        <button class="banner__btn">Shop Now</button>
+      </div>
+
+      <!-- категории -->
+      <section class="categories center">
+        <h2 class="categories__title">Shop by Categories</h2>
+        <div class="categories__items">
+          <article class="categories__item">
+            <img
+              src="./images/categories-men.png"
+              alt="categories-men"
+              class="categories__item_img"
+            />
+            <p class="categories__item_text">Men</p>
+          </article>
+          <article class="categories__item">
+            <img
+              src="./images/categories-women.png"
+              alt="categories-women"
+              class="categories__item_img"
+            />
+            <p class="categories__item_text">Women</p>
+          </article>
+          <article class="categories__item">
+            <img
+              src="./images/categories-elec.png"
+              alt="categories-elec"
+              class="categories__item_img"
+            />
+            <p class="categories__item_text">Electronics</p>
+          </article>
+          <article class="categories__item">
+            <img
+              src="./images/categories-jev.png"
+              alt="categories-jev"
+              class="categories__item_img"
+            />
+            <p class="categories__item_text">Jewelery</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- товары -->
+      <section class="products center">
+        <h2 class="products__title">Our Bestseller</h2>
+        <div class="products__items"></div>
+        <div class="messageDelete"></div>
+      </section>
+
+      <!-- добавить новый продукт -->
+      <form class="add">
+        <h2 class="add__titleMain">Add New Product</h2>
+        <div class="add__item">
+          <input type="text" class="add__title" placeholder="Title" required />
+          <input
+            type="text"
+            class="add__category"
+            placeholder="Category"
+            required
+          />
+        </div>
+        <input
+          type="text"
+          class="add__description add__item"
+          placeholder="Description"
+          required
+        />
+        <div class="add__item">
+          <input type="text" class="add__img" placeholder="Img URL" required />
+          <input
+            type="number"
+            class="add__price"
+            step="0.01"
+            placeholder="Price"
+            required
+          />
+        </div>
+        <button class="add__item add__btn" type="submit">Add Product</button>
+
+        <!-- сообщение -->
+        <div class="messageAdd"></div>
+      </form>
+    </main>
+
+    <!-- подвал -->
+    <footer class="footer center">
+      <div class="footer_top">
+        <div class="footer_column">
+          <h3 class="footer_title">Need Help</h3>
+          <a href="#" class="footer_text">Contact Us</a>
+          <a href="#" class="footer_text">Track Order</a>
+          <a href="#" class="footer_text">Returns & Refunds</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Company</h3>
+          <a href="#" class="footer_text">About Us</a>
+          <a href="#" class="footer_text">Collaboration</a>
+          <a href="#" class="footer_text">Media</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">More Info</h3>
+          <a href="#" class="footer_text">Term and Conditions</a>
+          <a href="#" class="footer_text">Privacy Policy</a>
+          <a href="#" class="footer_text">Shipping Policy</a>
+        </div>
+        <div class="footer_column">
+          <h3 class="footer_title">Location</h3>
+          <p class="footer_text">support@euphoria.in</p>
+          <p class="footer_text">Eklingpura Chouraha, Ahmedabad Main Road</p>
+          <p class="footer_text">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p class="footer_bottom_text">
+          Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- скрипт -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding: 30px 100px;
+}
+
+.header__navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header__nav {
+    color: rgb(128, 125, 126);
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.header__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Баннер */
+.banner {
+    background-image: url("./images/banner.png");
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 170px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: left;
+}
+
+.banner__text {
+    color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37.77px;
+    letter-spacing: 0.16px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 440px;
+}
+
+.banner__title {
+    color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 93.62px;
+    letter-spacing: 0.31px;
+    text-align: left;
+    width: 440px;
+}
+
+.banner__btn {
+    width: 250px;
+    padding: 16px 30px 16px 30px;
+
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+
+    color: rgb(60, 66, 66);
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* категории */
+.categories {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.categories__title {
+    color: rgb(60, 66, 66);
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.categories__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.categories__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categories__item_img {
+    width: 263px;
+    height: 263px;
+    border-radius: 10px;
+}
+
+.categories__item_text {
+    color: rgb(25, 25, 25);
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+/* товары */
+.products {
+    position: relative;
+
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.products__title {
+    color: rgb(60, 66, 66);
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.products__items {
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+
+}
+
+.products__item {
+    /* position: relative; */
+
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.products__item_img {
+    width: 150px;
+    height: 150px;
+}
+
+.products__item_title {
+    color: rgb(42, 47, 47);
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.products__item_price {
+    color: rgb(127, 127, 127);
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.products__item_btn {
+    padding: 10px 20px;
+
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(127, 127, 127);
+
+    color: rgb(127, 127, 127);
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.messageDelete {
+    position: absolute;
+
+    top: 100px;
+    left: calc(50% - 250px);
+    padding: 50px 50px;
+    min-width: 500px;
+    background-color: rgb(13, 156, 13);
+    color: azure;
+    display: none;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* добавить новый продукт */
+.add {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.add__titleMain {
+    color: rgb(60, 66, 66);
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.add__item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.add__title, .add__category {
+    padding: 10px 30px;
+}
+
+.add__description {
+    padding: 20px 30px;
+    width: 430px;
+
+}
+
+.add__img {
+    padding: 10px 30px;
+    width: 195px;
+}
+
+.add__price {
+    padding: 10px 10px;
+}
+
+.add__btn {
+    width: 200px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(127, 127, 127);
+
+    color: rgb(127, 127, 127);
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.messageAdd {
+    position: absolute;
+
+    top: 100px;
+    left: calc(50% - 250px);
+    padding: 50px 50px;
+    min-width: 500px;
+    background-color: rgb(13, 156, 13);
+    color: azure;
+    display: none;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* подвал */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(60, 66, 66);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.footer_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_title {
+    color: rgb(246, 246, 246);
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.footer_text {
+    color: rgb(246, 246, 246);
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.footer_bottom {
+    border-top: 1px solid rgb(190, 188, 189);
+    padding-top: 50px;
+}
+
+.footer_bottom_text {
+    color: rgb(246, 246, 246);
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
